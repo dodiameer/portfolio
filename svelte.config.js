@@ -6,7 +6,16 @@ const config = {
 	// for more information about preprocessors
 	preprocess: [
 		preprocess({
-			postcss: true
+			postcss: true,
+			scss: {
+				prependData: `
+				@use "include-media" as *;
+				@use "src/lib/sass/partails/bootstrap-classes" as *;
+				@use "src/lib/sass/partails/utilities" as *;
+				@use "src/lib/sass/partails/variables" as *;
+				@use "src/lib/sass/partails/mixins" as *;
+				`
+			}
 		}),
 	],
 
