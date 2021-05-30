@@ -6,21 +6,33 @@ import LayoutIcon from "$lib/components/icons/LayoutIcon.svelte";
 <template>
   <section class="row skills">
     <h2 class="col-md-12 skills__title">Skills</h2>
-    <Card title="HTML & CSS" class="col-md-6 col-lg-4">
-      <LayoutIcon slot="icon" width="48" />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores impedit iure, laborum aliquid omnis fugit eligendi expedita aspernatur, obcaecati sapiente consequatur quam perferendis enim! Laudantium beatae sed quia itaque officiis.
-    </Card>
-    <Card title="HTML & CSS" class="col-md-6 col-lg-4">
-      <LayoutIcon slot="icon" width="48" />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores impedit iure, laborum aliquid omnis fugit eligendi expedita aspernatur, obcaecati sapiente consequatur quam perferendis enim! Laudantium beatae sed quia itaque officiis.
-    </Card>
-    <Card title="HTML & CSS" class="col-md-6 col-lg-4">
-      <LayoutIcon slot="icon" width="48" />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores impedit iure, laborum aliquid omnis fugit eligendi expedita aspernatur, obcaecati sapiente consequatur quam perferendis enim! Laudantium beatae sed quia itaque officiis.
-    </Card>
     <Card title="HTML & CSS" class="col-md-6 col-lg-12">
       <LayoutIcon slot="icon" width="48" />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores impedit iure, laborum aliquid omnis fugit eligendi expedita aspernatur, obcaecati sapiente consequatur quam perferendis enim! Laudantium beatae sed quia itaque officiis.
+      The two most fundamental skills in web development. 
+      Additionally, I use semantic elements which improve 
+      accessibility for disabled people. 
+    </Card>
+    <Card title="Javascript & Typescript" class="col-md-6 col-lg-4">
+      <LayoutIcon slot="icon" width="48" />
+      The Javascript programming language that powers virtually
+      all websites, allows you to add rich interactions and 
+      mobile-app like features to your site. Typescript is a 
+      superset of Javascript which help coders write cleaner,
+      easier-to-understand code
+    </Card>
+    <Card title="Sass" class="col-md-6 col-lg-4">
+      <LayoutIcon slot="icon" width="48" />
+      Sass is an extension to CSS, which lets you write code 
+      quicker, as well as break down code into tiny, maintainable,
+      reusable chunks, all of which can get your website done quicker
+      and much more cleanly. 
+    </Card>
+    <Card title="Svelte" class="col-md-6 col-lg-4">
+      <LayoutIcon slot="icon" width="48" />
+      A framework that breaks down your website into small chunks called
+      components, it differs from other frameworks like React and Vue by
+      doing most it's work when building the website, which makes your site
+      smaller in size and more performant when compared with others. 
     </Card>
   </section>
 </template>
