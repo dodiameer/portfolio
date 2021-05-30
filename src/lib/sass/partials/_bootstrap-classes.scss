@@ -38,12 +38,12 @@
   padding: 1rem;
 }
 
-@include grid-classes("sm");
+@include _grid-classes("sm");
 
 @include media(">=tablet") {
-  @include grid-classes("md");
+  @include _grid-classes("md");
 }
 
 @include media(">=desktop") {
-  @include grid-classes("lg");
+  @include _grid-classes("lg");
 }

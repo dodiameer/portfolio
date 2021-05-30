@@ -1,12 +1,14 @@
-@use "variables" as *;
+@use "variables";
 
 @function map-deep-get($map, $keys...) {
   @each $key in $keys {
+    @debug $key;
     $map: map-get($map: $map, $key: $key);
   }
   @return $map;
 }
 
 @function get-color($color, $variant: "normal") {
-  @return map-deep-get($colors, $color, $variant)
+  @debug $color, $variant;
+  @return map-deep-get(variables.$colors, $color, $variant)
 }
