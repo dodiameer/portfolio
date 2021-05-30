@@ -1,8 +1,12 @@
 @use "partials/bootstrap-classes" as *;
 @use "partials/utilities" as *;
+@use "partials/mixins" as *;
+
+@include google-font("Open Sans");
 
 :root {
   font-size: 100%;
+  font-family: "Open Sans";
 }
 
 body {

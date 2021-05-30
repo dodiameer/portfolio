@@ -1,3 +1,33 @@
 @mixin google-font($font) {
   @import url("https://fonts.googleapis.com/css?family=#{$font}");
 }
+
+@mixin flow-x($amount: 0.5rem) {
+  & > * {
+    margin-left: $amount;
+    margin-right: $amount;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@mixin flow-y($amount: 0.5rem) {
+  & > * {
+    margin-top: $amount;
+    margin-bottom: $amount;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
