@@ -35,10 +35,6 @@
       flex-direction: column;
     }
     
-    .seperator {
-      flex: 1;
-    }
-    
     &__brand {
       font-size: 1.5rem;
     }
