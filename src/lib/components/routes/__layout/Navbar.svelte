@@ -1,13 +1,16 @@
 <script lang='ts'>
+  import {page} from "$app/stores"
   let currentRoute: string
-  $: currentRoute = "/home"
+  $: {
+    currentRoute = $page.path.split("/")[1]
+  }
 </script>
 
 <template>
   <div class="nav-wrapper">
       <nav class="nav container">
-        <a href="/home" class="nav__link" class:nav__link--active={currentRoute === "/home"}>home</a>
-        <a href="/about" class="nav__link" class:nav__link--active={currentRoute === "/about"}>about</a>
+        <a href="/home" class="nav__link" class:nav__link--active={currentRoute === "home"}>home</a>
+        <a href="/about" class="nav__link" class:nav__link--active={currentRoute === "about"}>about</a>
       </nav>
   </div>
 </template>
