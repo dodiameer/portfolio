@@ -13,6 +13,7 @@
         <div class="nav__links">
           <a href="/home" class="nav__link" class:nav__link--active={currentRoute === "home"}>home</a>
           <a href="/about" class="nav__link" class:nav__link--active={currentRoute === "about"}>about</a>
+          <a href="/contact" class="nav__link btn">Contact me</a>
         </div>
       </nav>
   </div>
@@ -52,6 +53,9 @@
 
       &--active {
         color: get-color("primary", "darker");
+      }
+      &.btn {
+        font-size: 0.85rem;
       }
     }
   }
