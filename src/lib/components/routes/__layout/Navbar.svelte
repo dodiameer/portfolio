@@ -51,7 +51,7 @@
       text-decoration: none;
 
       &--active {
-        color: get-color("primary");
+        color: get-color("primary", "darker");
       }
     }
   }
