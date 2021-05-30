@@ -66,6 +66,7 @@
   @include elevation(1);
   transition: 0.15s ease-out;
   transition-property: box-shadow, background-color, color;
+  cursor: pointer;
 
   &:focus {
     outline: 2px solid get-color($color);
