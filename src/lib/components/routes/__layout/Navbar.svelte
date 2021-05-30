@@ -52,7 +52,7 @@
       text-decoration: none;
 
       &--active {
-        color: get-color("primary", "darker");
+        color: get-color("primary");
       }
       &.btn {
         font-size: 0.85rem;

@@ -31,7 +31,7 @@ import LayoutIcon from "$lib/components/icons/LayoutIcon.svelte";
       font-size: 2rem;
       margin-top: 1rem;
       margin-bottom: 1rem;
-      color: get-color("primary", "darker")
+      color: get-color("primary")
     }
   }
 </style>

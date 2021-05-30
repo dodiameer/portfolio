@@ -19,7 +19,7 @@
 
 <style lang='scss'>
   .card {
-    $color: get-color("primary", "darker");
+    $color: get-color("primary");
     display: flex;
     flex-direction: column;
     padding: 1rem;

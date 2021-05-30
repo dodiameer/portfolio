@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     $overlay-color: rgba(0, 0, 0, 0.6);
-    background: linear-gradient(0deg, $overlay-color, $overlay-color), url("/hero-image.jpg"), get-color("primary", "darker");
+    background: linear-gradient(0deg, $overlay-color, $overlay-color), url("/hero-image.jpg"), get-color("primary");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
