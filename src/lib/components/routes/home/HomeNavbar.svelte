@@ -3,6 +3,7 @@
     <h2 class="nav-wrapper__title">Quick navigation</h2>
     <nav class="nav container">
       <a href="#skills-section" class="nav__link btn-secondary">Skills</a>
+      <a href="#work-section" class="nav__link btn-secondary">Work</a>
     </nav>
   </div>
 </template>
@@ -25,6 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include flow-x;
 
     &__link {
       // font-size: 0.85rem;
