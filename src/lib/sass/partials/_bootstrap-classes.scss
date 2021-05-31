@@ -27,8 +27,8 @@
 
 .row {
   display: grid;
-  // Sets up 2 grid on mobile, twelve from 768px and up
-  grid-template-columns: 1fr 1fr;
+  // Sets up 1 grid on mobile, twelve from 768px and up
+  grid-template-columns: 1fr;
   @include media(">=tablet") {
     grid-template-columns: repeat(12, 1fr);
   }

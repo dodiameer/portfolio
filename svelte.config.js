@@ -8,12 +8,14 @@ const config = {
 		preprocess({
 			postcss: true,
 			scss: {
+				includePaths: [
+					"node_modules/include-media/dist"
+				],
 				prependData: `
 				@use "include-media" as *;
-				@use "src/lib/sass/partails/bootstrap-classes" as *;
-				@use "src/lib/sass/partails/utilities" as *;
-				@use "src/lib/sass/partails/variables" as *;
-				@use "src/lib/sass/partails/mixins" as *;
+				@use "src/lib/sass/partials/utilities" as *;
+				@use "src/lib/sass/partials/variables" as *;
+				@use "src/lib/sass/partials/mixins" as *;
 				`
 			}
 		}),
