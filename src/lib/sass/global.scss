@@ -10,6 +10,7 @@
   line-height: 1.5;
 }
 
+
 body {
   box-sizing: border-box;
   background: get-color("grey", "background")
@@ -19,6 +20,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.05em;
 }
 
 .btn {
