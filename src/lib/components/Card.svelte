@@ -19,9 +19,9 @@
     {/if}
     <div class="card__content-wrapper">
       <h3 class="card__title">{title}</h3>
-      <main class="card__content">
+      <section class="card__content">
         <slot />
-      </main>
+      </section>
       <div class="card__actions">
         <slot name="actions" />
       </div>
