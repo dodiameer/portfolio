@@ -14,6 +14,9 @@
     <main class="card__content">
       <slot />
     </main>
+    <div class="card__actions">
+      <slot name="actions"></slot>
+    </div>
   </article>
 </template>
 
@@ -28,7 +31,6 @@
     border-radius: 4px;
     @include elevation;
     @include flow-y(0.33rem);
-
     transition: box-shadow 0.15s ease-out;
 
     &:hover {
@@ -43,6 +45,13 @@
     &__title {
       font-size: 1.33rem;
       text-align: center;
+    }
+
+    &__actions {
+      display: flex;
+      flex-direction: row;
+      align-items: center; 
+      flex-wrap: wrap;
     }
 
   }
