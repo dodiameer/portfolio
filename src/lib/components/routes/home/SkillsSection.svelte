@@ -8,7 +8,7 @@ import SvelteIcon from "$lib/components/icons/SvelteIcon.svelte";
 </script>
 <template>
   <section class="row skills" id="skills-section">
-    <h2 class="col-md-12 skills__title">Skills</h2>
+    <h2 class="col-md-12 section-title">Skills</h2>
     <Card title="HTML & CSS" class="col-md-6 col-lg-12">
       <HtmlIcon slot="icon" width="48" />
       The two most fundamental skills in web development. 
@@ -41,12 +41,4 @@ import SvelteIcon from "$lib/components/icons/SvelteIcon.svelte";
 </template>
 
 <style lang='scss'>
-  .skills {
-    &__title {
-      font-size: 2rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      color: get-color("primary")
-    }
-  }
 </style>

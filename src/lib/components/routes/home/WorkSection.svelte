@@ -4,7 +4,7 @@
 
 <template>
   <section class="row work" id="work-section">
-    <h2 class="col-md-12 work__title">My work</h2>
+    <h2 class="col-md-12 section-title">My work</h2>
     <Card title="Portfolio" class="col-md-12 col-lg-6" image="https://via.placeholder.com/600x400" imageAlt="Placeholder">
       Completely build from scratch, it uses a new 
       framework called SvelteKit, made by the Svelte
