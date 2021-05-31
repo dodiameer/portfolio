@@ -67,6 +67,8 @@
   transition: 0.15s ease-out;
   transition-property: box-shadow, background-color, color;
   cursor: pointer;
+  font-size: 0.85rem;
+  text-decoration: none;
 
   &:focus {
     outline: 2px solid get-color($color);
