@@ -1,20 +1,20 @@
 <template>
-  <div class="nav-wrapper">
+  <nav class="nav-wrapper">
     <h2 class="nav-wrapper__title">Quick navigation</h2>
-    <nav class="nav container">
+    <div class="nav container">
       <a href="#skills-section" class="nav__link btn-secondary">Skills</a>
       <a href="#work-section" class="nav__link btn-secondary">Work</a>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </template>
 
 <style lang='scss'>
   .nav-wrapper {
-    @include flow-y(1rem); 
+    @include flow-y(0.66rem);
     padding: 1rem 0.66rem;
     background: get-color("primary");
     color: get-color("primary", "content");
-
+    
     &__title {
       font-size: 1.2rem;
       font-weight: normal;
