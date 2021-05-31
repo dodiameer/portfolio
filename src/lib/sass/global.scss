@@ -23,3 +23,7 @@ body {
 .btn {
   @include button("primary")
 }
+
+.btn-secondary {
+  @include button("secondary")
+}
