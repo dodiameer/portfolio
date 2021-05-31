@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@sveltejs/adapter-static': ^1.0.0-next.12
   '@sveltejs/kit': next
   autoprefixer: ^10.2.5
   cssnano: ^5.0.1
@@ -15,6 +16,7 @@ specifiers:
   typescript: ^4.0.0
 
 devDependencies:
+  '@sveltejs/adapter-static': 1.0.0-next.12_@sveltejs+kit@1.0.0-next.111
   '@sveltejs/kit': 1.0.0-next.111_svelte@3.38.2
   autoprefixer: 10.2.6_postcss@8.3.0
   cssnano: 5.0.5_postcss@8.3.0
@@ -56,6 +58,14 @@ packages:
     dependencies:
       estree-walker: 2.0.2
       picomatch: 2.3.0
+    dev: true
+
+  /@sveltejs/adapter-static/1.0.0-next.12_@sveltejs+kit@1.0.0-next.111:
+    resolution: {integrity: sha512-7ksxa/Hepx+5nFaUiU9lCjPFVYZ9Iy6wd3KexAJe0/q+VxEx7TmAn/fNrmgRqZwQFHrPikvZ7Cx9pyeIykdyVg==}
+    peerDependencies:
+      '@sveltejs/kit': 1.0.0-next.110
+    dependencies:
+      '@sveltejs/kit': 1.0.0-next.111_svelte@3.38.2
     dev: true
 
   /@sveltejs/kit/1.0.0-next.111_svelte@3.38.2:
@@ -1143,8 +1153,8 @@ packages:
     resolution: {integrity: sha1-QzdOLiyglosO8VI0YLfXMP8i7rM=}
     dev: true
 
-  /rollup/2.50.4:
-    resolution: {integrity: sha512-mBQa9O6bdqur7a6R+TXcbdYgfO2arXlDG+rSrWfwAvsiumpJjD4OS23R9QuhItuz8ysWb8mZ91CFFDQUhJY+8Q==}
+  /rollup/2.50.5:
+    resolution: {integrity: sha512-Ztz4NurU2LbS3Jn5rlhnYv35z6pkjBUmYKr94fOBIKINKRO6kug9NTFHArT7jqwMP2kqEZ39jJuEtkk91NBltQ==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -1371,7 +1381,7 @@ packages:
       esbuild: 0.11.23
       postcss: 8.3.0
       resolve: 1.20.0
-      rollup: 2.50.4
+      rollup: 2.50.5
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
