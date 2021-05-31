@@ -4,6 +4,7 @@
 
 <svg
   role="img"
+  aria-label="HTML 5 Icon"
   viewBox="0 0 24 24"
   fill="currentColor"
   width="{width}"
