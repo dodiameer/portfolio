@@ -4,7 +4,7 @@ import LayoutIcon from "$lib/components/icons/LayoutIcon.svelte";
 
 </script>
 <template>
-  <section class="row skills">
+  <section class="row skills" id="skills-section">
     <h2 class="col-md-12 skills__title">Skills</h2>
     <Card title="HTML & CSS" class="col-md-6 col-lg-12">
       <LayoutIcon slot="icon" width="48" />

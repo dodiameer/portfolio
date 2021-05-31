@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section class="hero" id="hero-section">
     <h1 class="hero__heading">I build attractive sites that help you sell</h1>
     <h2 class="hero__subheading">Frontend Developer in İstanbul</h2>
     <button class="btn">Get in touch</button>
