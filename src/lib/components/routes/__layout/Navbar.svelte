@@ -8,7 +8,7 @@
 
 <template>
   <div class="nav-wrapper">
-      <nav class="nav container">
+      <nav class="nav container" aria-label="Main website navigation">
         <p class="nav__brand">dodiameer</p>
         <div class="nav__links">
           <a href="/home" class="nav__link" class:nav__link--active={currentRoute === "home"}>home</a>
@@ -50,9 +50,11 @@
     &__link {
       color: inherit;
       text-decoration: none;
-
+      
+      
       &--active {
-        color: get-color("primary");
+        color: get-color("primary", "darker");
+        border-bottom: 1px solid get-color("primary", "darker")
       }
       &.btn {
         font-size: 0.85rem;
