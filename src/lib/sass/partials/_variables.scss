@@ -10,7 +10,7 @@ $colors: (
     "darker": hsl(177, 70%, 30%),
     "normal": hsl(177, 90%, 40%),
     "lighter": hsl(177, 90%, 77%),
-    "lightest": hsl(177, 90%, 88%),
+    "lightest": hsl(177, 75%, 95%),
     "content": black
   ),
   "secondary": (
@@ -33,5 +33,10 @@ $colors: (
     "background": #f5f5f5,
     "text-dark": #777,
     "text-light": #eee
+  ),
+  "misc": (
+    "success": #d1e7dd,
+    "success-content": #0f5132,
+    "success-border": #badbcc
   )
 );
