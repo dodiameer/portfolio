@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from "$app/stores";
   import Alert from "$lib/components/Alert.svelte";
+  import { onMount } from "svelte";
   
   let interactClass = (node: HTMLElement): SvelteActionReturnType => {
     
@@ -16,8 +17,11 @@
     }
   }
 
-  const hasSubmitted =
-    $page.query.has("sent") && $page.query.get("sent") === "true";
+  let hasSubmitted = false
+
+  onMount(() => {
+    hasSubmitted = $page.query.has("sent") && $page.query.get("sent") === "true";
+  })
 </script>
 
 <svelte:head>
