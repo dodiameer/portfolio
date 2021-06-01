@@ -42,16 +42,24 @@
 
 <style lang="scss">
   .row {
-    $padding: 2rem;
-    padding-left: $padding;
-    padding-right: $padding;
+    padding: 0;
+    padding-bottom: 1rem;
 
-    &--white {
-      padding-top: $padding;
-      padding-bottom: $padding;
-      background: #fff;
-      border-radius: 4px;
-      @include elevation(2);
+    @include media(">=tablet") {
+      $padding: 2rem;
+      padding-left: $padding;
+      padding-right: $padding;
+
+      &--white {
+        padding-top: $padding;
+        padding-bottom: $padding;
+        background: #fff;
+        border-radius: 4px;
+        @include elevation(2);
+      }
     }
+  }
+  p {
+    @include hyphenate;
   }
 </style>
