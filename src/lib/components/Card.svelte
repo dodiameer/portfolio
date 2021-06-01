@@ -22,6 +22,7 @@
       <section class="card__content">
         <slot />
       </section>
+      <div class="card__spacer"></div>
       <div class="card__actions">
         <slot name="actions" />
       </div>
@@ -47,6 +48,9 @@
     &__content-wrapper {
       @include flow-y(0.5rem);
       padding: 0.33rem 1rem 1rem 1rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     &__icon {
@@ -80,6 +84,7 @@
       flex-direction: row;
       align-items: center;
       flex-wrap: wrap;
+      margin-top: auto;
     }
   }
 </style>
