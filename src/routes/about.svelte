@@ -25,7 +25,7 @@
       </p>
       <p class="col-md-12 col-lg-7">
         I also worked with a small team of developers to develop
-        <a href="//tombulgoril.com.tr">this website</a>, which helped me gain
+        <a href="https://tombulgoril.com.tr">this website</a>, which helped me gain
         experience in working with other developers, by using tools like Git &
         GitHub to collaborate easily and efficiently, as well as writing clean,
         well documented code to help the team understand easily, therefore
