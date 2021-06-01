@@ -2,6 +2,20 @@
   import { page } from "$app/stores";
   import Alert from "$lib/components/Alert.svelte";
   
+  let interactClass = (node: HTMLElement): SvelteActionReturnType => {
+    
+    const callback = () => {
+      node.classList.add("has-interacted")
+    }
+
+    node.addEventListener("blur", callback, { once: true })
+    return {
+      destroy: () => {
+        node.removeEventListener("blur", callback)
+      }
+    }
+  }
+
   const hasSubmitted =
     $page.query.has("sent") && $page.query.get("sent") === "true";
 </script>
@@ -28,6 +42,7 @@
     <div class="container row name">
       <label for="#name-input" class="col-md-12">Full name</label>
       <input
+        use:interactClass
         type="text"
         id="name-input"
         class="col-md-12"
@@ -39,6 +54,7 @@
     <div class="container row email">
       <label for="#email-input" class="col-md-12">Email address</label>
       <input
+        use:interactClass
         type="email"
         id="name-input"
         class="col-md-12"
@@ -50,6 +66,7 @@
     <div class="container row message">
       <label for="#message-input" class="col-md-12">Message</label>
       <textarea
+        use:interactClass
         name="message"
         id="message-input"
         class="col-md-12"
@@ -61,9 +78,12 @@
       name="_next"
       value="https://portfolio.dodiameer.tk/contact?sent=true" />
     <div class="container row submit">
-      <button class="btn col-md-12 col-lg-2" type="submit">Send!</button>
-      <button class="btn-secondary col-md-12 col-lg-2" type="reset"
-        >Clear form</button>
+      <button class="btn col-md-12 col-lg-2" type="submit">
+        Send!
+      </button>
+      <button class="btn-secondary col-md-12 col-lg-2" type="reset">
+        Clear form
+      </button>
     </div>
   </form>
 </template>
@@ -77,22 +97,23 @@
     border: 1px solid get-color("primary", "darkest");
     font-size: 0.85rem;
     font-family: inherit;
-
     &:focus {
       border-color: get-color("primary");
       outline: 2px solid get-color("primary");
       outline-offset: 4px;
-    }
-
-    &:invalid {
-      border-color: red;
-      outline-color: red;
-    }
+    }    
   }
 
   textarea {
     min-height: 35ch;
     resize: vertical;
     font-size: 1rem;
+  }
+
+  // Has to be in global block
+  :global(.has-interacted:invalid) {
+    // Has !important because of specificity
+    border-color: red !important;
+    outline-color: red !important;
   }
 </style>
