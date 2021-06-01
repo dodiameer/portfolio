@@ -24,7 +24,7 @@
   <title>Contact me | dodiameer</title>
   <meta
     name="description"
-    content="Contact dodiameer, a Frontend Web developer in İstanbul, to asky any question or inquire about building your website" />
+    content="Contact dodiameer, a Frontend Web developer in İstanbul, to ask any question or inquire about building your website" />
 </svelte:head>
 <template>
   <div class="container">
