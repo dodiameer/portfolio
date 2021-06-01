@@ -26,6 +26,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.05em;
 }
 
+img {
+  // Fixes blurry images in Chrome
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimizeQuality;
+}
+
 .btn {
   @include button("primary")
 }
