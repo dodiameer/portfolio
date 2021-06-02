@@ -32,6 +32,7 @@
 <button
   class="btn btn-secondary"
   class:btn--visible="{visible}"
+  aria-hidden="{!visible}"
   on:click="{goToTop}"
   aria-label="Go to the top of the page">
   <ArrowUpIcon />
