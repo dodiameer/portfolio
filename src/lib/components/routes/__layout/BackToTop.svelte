@@ -18,7 +18,7 @@
   const scrollListener = () => {
     const root = document.documentElement;
     const scrollTotal = root.scrollHeight - root.clientHeight;
-    visible = root.scrollTop / scrollTotal > 0.10;
+    visible = root.scrollTop / scrollTotal > 0.20;
   };
 
   onMount(() => {
@@ -40,13 +40,14 @@
 
 <style lang="scss">
   .btn {
+    @include elevation(4);
     border-radius: 9999px;
     padding: 0;
     $width: 3rem;
     width: $width;
     height: $width;
     position: fixed;
-    $position: 1rem;
+    $position: 0.75rem;
     bottom: $position;
     right: $position;
     z-index: 100;
