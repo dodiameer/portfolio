@@ -9,7 +9,7 @@
 <template>
   <div class="nav-wrapper">
       <nav class="nav container" aria-label="Main website navigation">
-        <p class="nav__brand">dodiameer</p>
+        <a href="/home" class="nav__brand">dodiameer</a>
         <div class="nav__links">
           <a href="/home" class="nav__link" class:nav__link--active={currentRoute === "home"}>home</a>
           <a href="/about" class="nav__link" class:nav__link--active={currentRoute === "about"}>about</a>
@@ -38,6 +38,8 @@
     
     &__brand {
       font-size: 1.5rem;
+      color: inherit;
+      text-decoration: none;
     }
 
     &__links {
