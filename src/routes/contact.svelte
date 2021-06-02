@@ -122,4 +122,8 @@
     border-color: red !important;
     outline-color: red !important;
   }
+
+  form > .row {
+    padding-top: 0;
+  }
 </style>
