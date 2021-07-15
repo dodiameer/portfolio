@@ -45,3 +45,5 @@ img {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
+@include utility-class(margin, "m");

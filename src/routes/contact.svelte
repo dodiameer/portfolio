@@ -1,29 +1,28 @@
 <script lang="ts">
   import Alert from "$lib/components/Alert.svelte";
   import { onMount } from "svelte";
-  
-  let interactClass = (node: HTMLElement): SvelteActionReturnType => {
-    
-    const callback = () => {
-      node.classList.add("has-interacted")
-    }
 
-    node.addEventListener("blur", callback, { once: true })
+  let interactClass = (node: HTMLElement): SvelteActionReturnType => {
+    const callback = () => {
+      node.classList.add("has-interacted");
+    };
+
+    node.addEventListener("blur", callback, { once: true });
     return {
       destroy: () => {
-        node.removeEventListener("blur", callback)
-      }
-    }
-  }
+        node.removeEventListener("blur", callback);
+      },
+    };
+  };
 
-  let hasSubmitted = false
+  let hasSubmitted = false;
 
   onMount(() => {
     // hasSubmitted = $page.query.has("sent") && $page.query.get("sent") === "true";
-    //! $page.query wouldn't work correctly in production - this is a fallback 
-    const params = new URLSearchParams(location.search)
-    hasSubmitted = params.has("sent") && params.get("sent") === "true"
-  })
+    //! $page.query wouldn't work correctly in production - this is a fallback
+    const params = new URLSearchParams(location.search);
+    hasSubmitted = params.has("sent") && params.get("sent") === "true";
+  });
 </script>
 
 <svelte:head>
@@ -33,13 +32,20 @@
     content="Contact dodiameer, a Frontend Web developer in İstanbul, to ask any question or inquire about building your website" />
 </svelte:head>
 <template>
-  <div class="container">
+  <div class="container mb-4">
     <h1 class="section-title">Contact me</h1>
     {#if hasSubmitted}
       <Alert type="primary">
         Thank you! Your message has been sent, I'll reach out to you as soon as
         possible.
       </Alert>
+    {:else}
+      <p>
+        Hey, thanks for wanting to talk to me! You can reach me
+        on <a href="https://twitter.com/RandomDodi">Twitter</a> (@RandomDodi),
+        via <a href="mailto:mtxshiftg@gmail.com">email</a> (mtxshiftg@gmail.com),
+        or by filling the form below which will send me an email.
+      </p>
     {/if}
   </div>
   <form
@@ -84,9 +90,7 @@
       name="_next"
       value="https://portfolio.dodiameer.tk/contact?sent=true" />
     <div class="container row submit">
-      <button class="btn col-md-12 col-lg-2" type="submit">
-        Send!
-      </button>
+      <button class="btn col-md-12 col-lg-2" type="submit"> Send! </button>
       <button class="btn-secondary col-md-12 col-lg-2" type="reset">
         Clear form
       </button>
@@ -107,7 +111,7 @@
       border-color: get-color("primary");
       outline: 2px solid get-color("primary");
       outline-offset: 4px;
-    }    
+    }
   }
 
   textarea {

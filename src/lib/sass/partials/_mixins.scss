@@ -108,3 +108,23 @@
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+
+@mixin utility-class($property: margin, $shorthand: "m") {
+  @for $increment from 1 through 10 {
+    .#{$shorthand}-#{$increment} {
+      #{$property}: $increment * 0.25rem
+    }
+    .#{$shorthand}t-#{$increment} {
+      #{$property}-top: $increment * 0.25rem
+    }
+    .#{$shorthand}b-#{$increment} {
+      #{$property}-bottom: $increment * 0.25rem
+    }
+    .#{$shorthand}l-#{$increment} {
+      #{$property}-left: $increment * 0.25rem
+    }
+    .#{$shorthand}r-#{$increment} {
+      #{$property}-top: $increment * 0.25rem
+    }
+  }
+}
