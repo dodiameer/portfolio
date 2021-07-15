@@ -3,13 +3,14 @@
   export let icon: string = "";
   export let image: string = "";
   export let imageAlt: string = "";
+  export let hoverEffect: boolean = false;
 
   let classNames: string = "";
   export { classNames as class };
 </script>
 
 <template>
-  <article class="card {classNames}">
+  <article class="card {classNames}" class:card--hover-effect={hoverEffect}>
     {#if image}
       <img src="{image}" alt="{imageAlt}" class="card__image" />
     {:else}
@@ -43,6 +44,15 @@
 
     &:hover {
       @include elevation(2);
+    }
+
+    &--hover-effect {
+      @media (prefers-reduced-motion: no-preference) {
+        transition: background-color 0.15s ease-out;
+      }
+      &:hover {
+        background: get-color("primary", "lightest");
+      }
     }
 
     &__content-wrapper {

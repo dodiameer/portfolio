@@ -11,30 +11,31 @@
     </div>
     <div class="row row--white">
       <p class="col-md-12">
-        Hi, my (real) name is Mohammed. I'm 16 years old, live with my family in
-        İstanbul, and I've been doing web development for over a year.
+        My real name is Mohammed. I'm 16 years old, live with my family in
+        İstanbul, and I've been doing web development since January 2020.
       </p>
       <p class="col-md-12">
         I'm a self-taught developer, and while I'm comfortable working on a
         backend, most of my experience is in the browser. The tech I use has
         always changed, but I love working with Svelte & SvelteKit for my web
-        apps, and I use Sass to write my CSS. I also wrote a grid system similar
-        to bootstrap's to handle responsive layout. I use it in sites where it
-        fits in nicely (like this portfolio), but I use regular media queries
-        when it makes sense to.
+        apps, and I use Sass to write my CSS. If I do need a backend, I reach
+        out for Elixir and Phoenix, because they allow me to be very productive
+        and focus on the code I'm writing rather than configuration and
+        boilerplate.
       </p>
-      <p class="col-md-12 col-lg-7">
-        I also worked with a small team of developers to develop
-        <a href="https://tombulgoril.com.tr">this website</a>, which helped me gain
-        experience in working with other developers, by using tools like Git &
-        GitHub to collaborate easily and efficiently, as well as writing clean,
-        well documented code to help the team understand easily, therefore
-        adding features and fixing bugs quickly.
+      <p class="col-md-12">
+        I also worked with a small team of developers to develop a small
+        business's website. Unfortunately the business closed and their website
+        has been removed. Nevertheless, the experience helped me gain experience
+        in working with other developers, by using tools like Git & GitHub to
+        collaborate easily and efficiently, as well as writing clean, well
+        documented code to help the team understand easily, therefore adding
+        features and fixing bugs quickly.
       </p>
-      <p class="col-md-12 col-lg-5">
+      <p class="col-md-12">
         I'm currently not doing freelance work, as I'm finishing school to go to
         college, however you can <a href="/contact">get in touch with me</a> if you
-        want, I'll make sure to reply :)
+        want!
       </p>
     </div>
   </section>
