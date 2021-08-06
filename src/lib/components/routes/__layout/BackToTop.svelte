@@ -38,26 +38,27 @@
   <ArrowUpIcon />
 </button>
 
-<style lang="scss">
+<style lang="postcss">
   .btn {
-    @include elevation(4);
+    box-shadow: var(--elevation-4);
     border-radius: 9999px;
     padding: 0;
-    $width: 3rem;
-    width: $width;
-    height: $width;
+    --size: 3rem;
+    width: var(--size);
+    height: var(--size);
     position: fixed;
-    $position: 0.75rem;
-    bottom: $position;
-    right: $position;
+    --position: 0.75rem;
+    bottom: var(--position);
+    right: var(--position);
     z-index: 100;
     opacity: 0;
     transform: translateY(100px);
     transition: all 0.5s ease-out;
 
-    &--visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  }
+
+  .btn--visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 </style>
