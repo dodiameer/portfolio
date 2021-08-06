@@ -8,17 +8,6 @@ const config = {
 	preprocess: [
 		preprocess({
 			postcss: true,
-			scss: {
-				includePaths: [
-					"node_modules/include-media/dist"
-				],
-				prependData: `
-				@use "include-media" as *;
-				@use "src/lib/sass/partials/utilities" as *;
-				@use "src/lib/sass/partials/variables" as *;
-				@use "src/lib/sass/partials/mixins" as *;
-				`
-			}
 		}),
 	],
 

@@ -1,0 +1,45 @@
+.btn,
+button {
+  padding: 0.75em 1em;
+  background: var(--button-background);
+  color: var(--button-text);
+  border: none;
+  border-radius: 0.2em;
+  transition: 0.15s ease-out;
+  transition-property: box-shadow, background-color, color;
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-decoration: none;
+  box-shadow: var(--elevation-1);
+}
+
+.btn:focus, button:focus {
+  outline: 1px solid var(--button-background);
+  outline-offset: 0.25em;
+}
+
+.btn:focus, .btn:hover, button:focus, button:hover {
+  box-shadow: var(--elevation-2);
+}
+
+/*? Primary color */
+.btn, button {
+  --button-background: var(--colors-primary-normal);
+  --button-text: var(--colors-primary-content);
+}
+
+.btn:hover, button:hover {
+  --button-background: var(--colors-primary-darker);
+  --button-text: white;
+}
+
+/*? Secondary color */
+.btn-secondary {
+  --button-background: var(--colors-secondary-normal);
+  --button-text: var(--colors-secondary-content);
+}
+
+.btn-secondary:hover {
+  --button-background: var(--colors-secondary-darker);
+  --button-text: white;
+}

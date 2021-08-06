@@ -51,6 +51,3 @@ import NetlifyIcon from "$lib/components/icons/NetlifyIcon.svelte";
     </Card>
   </section>
 </template>
-
-<style lang="scss">
-</style>

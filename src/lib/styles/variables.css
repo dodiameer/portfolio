@@ -1,0 +1,44 @@
+:root {
+  /** Colors */
+  --colors-primary-darkest: hsl(200, 60%, 20%);
+  --colors-primary-darker: hsl(200, 70%, 30%);
+  --colors-primary-normal: hsl(200, 90%, 40%);
+  --colors-primary-lighter: hsl(200, 90%, 77%);
+  --colors-primary-lightest: hsl(200, 75%, 95%);
+  --colors-primary-content: white;
+  --colors-secondary-darkest: hsl(354, 65%, 29%);
+  --colors-secondary-darker: hsl(354, 65%, 39%);
+  --colors-secondary-normal: hsl(354, 65%, 52%);
+  --colors-secondary-lighter: hsl(354, 75%, 75%);
+  --colors-secondary-lightest: hsl(354, 85%, 90%);
+  --colors-secondary-content: white;
+  --colors-accent-darkest: hsl(261, 41%, 25%);
+  --colors-accent-darker: hsl(261, 41%, 30%);
+  --colors-accent-normal: hsl(261, 41%, 40%);
+  --colors-accent-lighter: hsl(261, 41%, 60%);
+  --colors-accent-lightest: hsl(261, 41%, 80%);
+  --colors-accent-content: white;
+  --colors-grey-background: #f5f5f5;
+  --colors-grey-text-dark: #777;
+  --colors-grey-text-light: #eee;
+  --colors-misc-success: #d1e7dd;
+  --colors-misc-success-content: #0f5132;
+  --colors-misc-success-border: #badbcc;
+  /** Flow */
+  --flow-default: 0.5em;
+  --flow-y: var(--flow-default);
+  --flow-x: var(--flow-default);
+  /** Margin */
+  --margin-multiplier: 0.25rem;
+  /** Elevation */
+  --elevation-1: 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  --elevation-2: 0px 2px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --elevation-3: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
+    0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+  --elevation-4: 0px 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0px 6px 30px 5px rgba(0, 0, 0, 0.12), 0px 8px 10px -7px rgba(0, 0, 0, 0.2);
+  --elevation-5: 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
