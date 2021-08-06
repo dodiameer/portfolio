@@ -7,16 +7,39 @@
   } from "$lib/utilities/bodyScroll";
   import { fly } from "svelte/transition";
 
+  /**
+   * Current page name without slashes.
+   * @example "/home" => "home", "/some/nested/page" => "some"
+   */
   let currentRoute: string;
   $: {
     currentRoute = $page.path.split("/")[1];
   }
 
+  /**
+   * State of the menu
+   * @wontfix
+   *   If the menu is open, then the screen size becomes
+   *   large enough to hide the menu, then smaller again,
+   *   the menu will be open again. Ideally the menu should
+   *   be closed when the screen size becomes large.
+   */
   let isOpen = false;
+
+  /**
+   * Height of the navbar, assigned in runtime to avoid
+   * hardcoding the height in the css.
+   * 
+   * @usedby `.nav__links` in CSS to set the height of the menu
+   *   to be flush with the screen height.
+   */
   let navHeight = 0;
 
   /**
    * Toggles the menu between open/closed
+   *
+   * This **_must_** be used instead of just doing `isOpen = !isOpen`,
+   * because it will also toggle scrolling on the body.
    */
   const toggleMenu = () => {
     isOpen = !isOpen;
@@ -25,6 +48,9 @@
 
   /**
    * Hide the menu when a link is clicked (Svelte action)
+   *
+   * This **_must_** be used instead of just doing `isOpen = false`,
+   * because it will also enable scrolling on the body.
    */
   const hideMenuOnLinkClick = (node: HTMLElement) => {
     node.querySelectorAll("a").forEach((link) => {
@@ -54,7 +80,7 @@
           class="nav__links"
           class:nav__links--open="{isOpen}"
           use:hideMenuOnLinkClick
-          transition:fly={{ y: -navHeight }}>
+          transition:fly="{{ y: -navHeight }}">
           <a
             href="/home"
             class="nav__link"
