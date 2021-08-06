@@ -43,3 +43,10 @@ button {
   --button-background: var(--colors-secondary-darker);
   --button-text: white;
 }
+
+/*? No style */
+.btn-no-style, .btn-no-style:hover, .btn-no-style:focus, .btn-no-style:active {
+  --button-background: transparent;
+  --button-text: currentColor;
+  box-shadow: none;
+}
