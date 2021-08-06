@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@fullhuman/postcss-purgecss': ^4.0.3
   '@sveltejs/adapter-static': ^1.0.0-next.13
   '@sveltejs/kit': ^1.0.0-next.134
   autoprefixer: ^10.2.5
@@ -15,6 +16,7 @@ specifiers:
   typescript: ^4.0.0
 
 devDependencies:
+  '@fullhuman/postcss-purgecss': 4.0.3_postcss@8.3.0
   '@sveltejs/adapter-static': 1.0.0-next.13
   '@sveltejs/kit': 1.0.0-next.134_svelte@3.38.2
   autoprefixer: 10.2.6_postcss@8.3.0
@@ -46,6 +48,15 @@ packages:
       '@babel/helper-validator-identifier': 7.14.0
       chalk: 2.4.2
       js-tokens: 4.0.0
+    dev: true
+
+  /@fullhuman/postcss-purgecss/4.0.3_postcss@8.3.0:
+    resolution: {integrity: sha512-/EnQ9UDWGGqHkn1UKAwSgh+gJHPKmD+Z+5dQ4gWT4qq2NUyez3zqAfZNwFH3eSgmgO+wjTXfhlLchx2M9/K+7Q==}
+    peerDependencies:
+      postcss: ^8.0.0
+    dependencies:
+      postcss: 8.3.0
+      purgecss: 4.0.3
     dev: true
 
   /@rollup/pluginutils/4.1.1:
@@ -282,6 +293,11 @@ packages:
 
   /colorette/1.2.2:
     resolution: {integrity: sha512-MKGMzyfeuutC/ZJ1cba9NqcNpfeqMUcYmyF1ZFY6/Cn7CNSAKx6a+s48sqLqyAiZuaP2TcqMhoo+dlwFnVxT9w==}
+    dev: true
+
+  /commander/6.2.1:
+    resolution: {integrity: sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==}
+    engines: {node: '>= 6'}
     dev: true
 
   /commander/7.2.0:
@@ -1129,6 +1145,16 @@ packages:
       colorette: 1.2.2
       nanoid: 3.1.23
       source-map-js: 0.6.2
+    dev: true
+
+  /purgecss/4.0.3:
+    resolution: {integrity: sha512-PYOIn5ibRIP34PBU9zohUcCI09c7drPJJtTDAc0Q6QlRz2/CHQ8ywGLdE7ZhxU2VTqB7p5wkvj5Qcm05Rz3Jmw==}
+    hasBin: true
+    dependencies:
+      commander: 6.2.1
+      glob: 7.1.7
+      postcss: 8.3.6
+      postcss-selector-parser: 6.0.6
     dev: true
 
   /readdirp/3.5.0:
