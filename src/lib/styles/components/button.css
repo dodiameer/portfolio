@@ -10,11 +10,16 @@ button {
   cursor: pointer;
   font-size: 0.85rem;
   text-decoration: none;
+  box-shadow: var(--elevation-1);
 }
 
 .btn:focus, button:focus {
   outline: 1px solid var(--button-background);
   outline-offset: 0.25em;
+}
+
+.btn:focus, .btn:hover, button:focus, button:hover {
+  box-shadow: var(--elevation-2);
 }
 
 /*? Primary color */
