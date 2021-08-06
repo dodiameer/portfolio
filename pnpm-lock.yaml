@@ -5,11 +5,9 @@ specifiers:
   '@sveltejs/kit': ^1.0.0-next.134
   autoprefixer: ^10.2.5
   cssnano: ^5.0.1
-  include-media: ^1.4.10
   postcss: ^8.2.10
   postcss-custom-media: ^8.0.0
   postcss-load-config: ^3.0.1
-  sass: ^1.34.0
   svelte: ^3.34.0
   svelte-check: ^2.0.0
   svelte-preprocess: ^4.7.1
@@ -21,14 +19,12 @@ devDependencies:
   '@sveltejs/kit': 1.0.0-next.134_svelte@3.38.2
   autoprefixer: 10.2.6_postcss@8.3.0
   cssnano: 5.0.5_postcss@8.3.0
-  include-media: 1.4.10
   postcss: 8.3.0
   postcss-custom-media: 8.0.0_postcss@8.3.0
   postcss-load-config: 3.0.1
-  sass: 1.34.0
   svelte: 3.38.2
-  svelte-check: 2.0.0_c130a8da5782441840aa3f917c49fc3e
-  svelte-preprocess: 4.7.3_7d17a2d703774e881e47a1d86e3f7ad8
+  svelte-check: 2.0.0_98db3e04868c8b1b4a541d81d8c3c555
+  svelte-preprocess: 4.7.3_ddfd8490a44ef0de606159ff3aef985a
   tslib: 2.2.0
   typescript: 4.3.2
 
@@ -596,10 +592,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       resolve-from: 5.0.0
-    dev: true
-
-  /include-media/1.4.10:
-    resolution: {integrity: sha512-TymQzKF7oWHbItEcEHOCponZ90lRr1I9QbYeD+qCxXy4Z0/pSpS4Ocz2bq3FMOERlXXrY9Sawsh9GjiObVQA6A==}
     dev: true
 
   /inflight/1.0.6:
@@ -1190,14 +1182,6 @@ packages:
       mri: 1.1.6
     dev: true
 
-  /sass/1.34.0:
-    resolution: {integrity: sha512-rHEN0BscqjUYuomUEaqq3BMgsXqQfkcMVR7UhscsAVub0/spUrZGBMxQXFS2kfiDsPLZw5yuU9iJEFNC2x38Qw==}
-    engines: {node: '>=8.9.0'}
-    hasBin: true
-    dependencies:
-      chokidar: 3.5.1
-    dev: true
-
   /source-map-js/0.6.2:
     resolution: {integrity: sha512-/3GptzWzu0+0MBQFrDKzw/DvvMTUORvgY6k6jd/VS6iCR4RDTKWH6v6WPwQoUO8667uQEf9Oe38DxAYWY5F/Ug==}
     engines: {node: '>=0.10.0'}
@@ -1253,7 +1237,7 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /svelte-check/2.0.0_c130a8da5782441840aa3f917c49fc3e:
+  /svelte-check/2.0.0_98db3e04868c8b1b4a541d81d8c3c555:
     resolution: {integrity: sha512-72xHHZG2DUgt1QzKKKvirzvYYDKLfK5L2lJsCCbW87fd383VqZJ08RLKNf6pfEZQJl8yk2rUsTU6krgntB9TXQ==}
     hasBin: true
     peerDependencies:
@@ -1267,7 +1251,7 @@ packages:
       sade: 1.7.4
       source-map: 0.7.3
       svelte: 3.38.2
-      svelte-preprocess: 4.7.3_7d17a2d703774e881e47a1d86e3f7ad8
+      svelte-preprocess: 4.7.3_ddfd8490a44ef0de606159ff3aef985a
       typescript: 4.3.2
     transitivePeerDependencies:
       - '@babel/core'
@@ -1290,7 +1274,7 @@ packages:
       svelte: 3.38.2
     dev: true
 
-  /svelte-preprocess/4.7.3_7d17a2d703774e881e47a1d86e3f7ad8:
+  /svelte-preprocess/4.7.3_ddfd8490a44ef0de606159ff3aef985a:
     resolution: {integrity: sha512-Zx1/xLeGOIBlZMGPRCaXtlMe4ZA0faato5Dc3CosEqwu75MIEPuOstdkH6cy+RYTUYynoxzNaDxkPX4DbrPwRA==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true
@@ -1336,7 +1320,6 @@ packages:
       detect-indent: 6.1.0
       postcss: 8.3.0
       postcss-load-config: 3.0.1
-      sass: 1.34.0
       strip-indent: 3.0.0
       svelte: 3.38.2
       typescript: 4.3.2
