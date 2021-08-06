@@ -9,6 +9,7 @@
 @import "./utilities/hyphenate.css";
 /** Components */
 @import "./components/container.css";
+@import "./components/button.css";
 
 :root {
   font-size: 100%;

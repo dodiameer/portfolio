@@ -1,0 +1,40 @@
+.btn,
+button {
+  padding: 0.75rem 1rem;
+  background: var(--button-background);
+  color: var(--button-text);
+  border: none;
+  border-radius: 4px;
+  transition: 0.15s ease-out;
+  transition-property: box-shadow, background-color, color;
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.btn:focus, button:focus {
+  outline: var(--button-background);
+  outline-offset: 4px;
+}
+
+/*? Primary color */
+.btn, button {
+  --button-background: var(--colors-primary-normal);
+  --button-text: var(--colors-primary-content);
+}
+
+.btn:hover, button:hover {
+  --button-background: var(--colors-primary-darker);
+  --button-text: white;
+}
+
+/*? Secondary color */
+.btn-secondary {
+  --button-background: var(--colors-secondary-normal);
+  --button-text: var(--colors-secondary-content);
+}
+
+.btn-secondary:hover {
+  --button-background: var(--colors-secondary-darker);
+  --button-text: white;
+}
