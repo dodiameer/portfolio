@@ -1,3 +1,5 @@
+/*? Open Sans */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
 @import "./breakpoints.css";
 @import "./variables.css";
 @import "./grid.css";
@@ -5,3 +7,54 @@
 @import "./utilities/flow.css";
 @import "./utilities/elevation.css";
 @import "./utilities/hyphenate.css";
+
+:root {
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  box-sizing: border-box;
+  background: var(--colors-grey-background);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.015em;
+}
+
+img {
+  /* Fixes blurry images in Chrome */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimizeQuality;
+}
+
+/* TODO: Add button component */
+/* 
+.btn {
+  @include button("primary")
+}
+
+.btn-secondary {
+  @include button("secondary")
+}
+*/
+
+.section-title {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
