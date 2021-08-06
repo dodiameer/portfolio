@@ -2,8 +2,8 @@
   <nav class="nav-wrapper" aria-label="Home page quick navigation">
     <h2 class="nav-wrapper__title">Quick navigation</h2>
     <div class="nav container">
-      <a href="#skills-section" class="nav__link btn-secondary">Skills</a>
-      <a href="#work-section" class="nav__link btn-secondary">Work</a>
+      <a href="#skills-section" class="nav__link btn btn-secondary">Skills</a>
+      <a href="#work-section" class="nav__link btn btn-secondary">Work</a>
     </div>
   </nav>
 </template>

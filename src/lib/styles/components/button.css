@@ -1,6 +1,6 @@
 .btn,
 button {
-  padding: 0.75rem 1rem;
+  padding: 0.75em 1em;
   background: var(--button-background);
   color: var(--button-text);
   border: none;
@@ -13,8 +13,8 @@ button {
 }
 
 .btn:focus, button:focus {
-  outline: var(--button-background);
-  outline-offset: 4px;
+  outline: 1px solid var(--button-background);
+  outline-offset: 0.25em;
 }
 
 /*? Primary color */
