@@ -41,9 +41,9 @@
       </Alert>
     {:else}
       <p>
-        Hey, thanks for wanting to talk to me! You can reach me
-        on <a href="https://twitter.com/RandomDodi">Twitter</a> (@RandomDodi),
-        via <a href="mailto:mtxshiftg@gmail.com">email</a> (mtxshiftg@gmail.com),
+        Hey, thanks for wanting to talk to me! You can reach me on <a
+          href="https://twitter.com/RandomDodi">Twitter</a>
+        (@RandomDodi), via <a href="mailto:mtxshiftg@gmail.com">email</a> (mtxshiftg@gmail.com),
         or by filling the form below which will send me an email.
       </p>
     {/if}
@@ -51,7 +51,7 @@
   <form
     action="https://formsubmit.co/83c1152aef0e0672d3abe69f9f2740f8"
     method="POST">
-    <div class="container row name">
+    <div class="container row name flow-y">
       <label for="#name-input" class="col-md-12">Full name</label>
       <input
         use:interactClass
@@ -98,20 +98,16 @@
   </form>
 </template>
 
-<style lang="scss">
+<style lang="postcss">
   input[type="text"],
   input[type="email"],
   textarea {
-    padding: 0.5rem 1rem;
+    padding: 0.5em 1em;
     border-radius: 6px;
-    border: 1px solid get-color("primary", "darkest");
+    border: 1px solid var(--colors-primary-darkest);
     font-size: 0.85rem;
     font-family: inherit;
-    &:focus {
-      border-color: get-color("primary");
-      outline: 2px solid get-color("primary");
-      outline-offset: 4px;
-    }
+    margin: 0;
   }
 
   textarea {
@@ -120,14 +116,24 @@
     font-size: 1rem;
   }
 
-  // Has to be in global block
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: var(--colors-primary-normal);
+    outline: 2px solid var(--colors-primary-normal);
+    outline-offset: 4px;
+  }
+
+  /** Has to be in global block */
   :global(.has-interacted:invalid) {
-    // Has !important because of specificity
+    /*! Has !important because of specificity */
     border-color: red !important;
     outline-color: red !important;
   }
 
   form > .row {
     padding-top: 0;
+    /** The spacing between label and input is too large - decrease it */
+    gap: 0.5em;
   }
 </style>
