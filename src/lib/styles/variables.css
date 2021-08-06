@@ -28,4 +28,6 @@
   --flow-default: 0.5em;
   --flow-y: var(--flow-default);
   --flow-x: var(--flow-default);
+  /** Margin */
+  --margin-multiplier: 0.25rem;
 }
