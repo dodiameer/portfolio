@@ -1,11 +1,11 @@
 :root {
   /** Colors */
-  --colors-primary-darkest: hsl(177, 60%, 20%);
-  --colors-primary-darker: hsl(177, 70%, 30%);
-  --colors-primary-normal: hsl(177, 90%, 40%);
-  --colors-primary-lighter: hsl(177, 90%, 77%);
-  --colors-primary-lightest: hsl(177, 75%, 95%);
-  --colors-primary-content: black;
+  --colors-primary-darkest: hsl(200, 60%, 20%);
+  --colors-primary-darker: hsl(200, 70%, 30%);
+  --colors-primary-normal: hsl(200, 90%, 40%);
+  --colors-primary-lighter: hsl(200, 90%, 77%);
+  --colors-primary-lightest: hsl(200, 75%, 95%);
+  --colors-primary-content: white;
   --colors-secondary-darkest: hsl(354, 65%, 29%);
   --colors-secondary-darker: hsl(354, 65%, 39%);
   --colors-secondary-normal: hsl(354, 65%, 52%);
