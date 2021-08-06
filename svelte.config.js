@@ -14,9 +14,9 @@ const config = {
 				],
 				prependData: `
 				@use "include-media" as *;
-				@use "src/lib/sass/partials/utilities" as *;
-				@use "src/lib/sass/partials/variables" as *;
-				@use "src/lib/sass/partials/mixins" as *;
+				@use "src/lib/styles/partials/utilities" as *;
+				@use "src/lib/styles/partials/variables" as *;
+				@use "src/lib/styles/partials/mixins" as *;
 				`
 			}
 		}),
