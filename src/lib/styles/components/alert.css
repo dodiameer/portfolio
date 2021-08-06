@@ -1,0 +1,23 @@
+/* purgecss start ignore */
+
+.alert {
+  border: 1px solid var(--alert-border, transparent);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: var(--alert-background);
+  color: var(--alert-text);
+}
+
+.alert-success {
+  --alert-border: var(--colors-misc-success-border);
+  --alert-text: var(--colors-misc-success-content);
+  --alert-background: var(--colors-misc-success)
+}
+
+.alert-primary {
+  --alert-border: var(--colors-primary-darker);
+  --alert-text: var(--colors-primary-darkest);
+  --alert-background: var(--colors-primary-lightest);
+}
+
+/* purgecss end ignore */

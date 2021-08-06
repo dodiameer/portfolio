@@ -11,6 +11,7 @@
 /** Components */
 @import "./components/container.css";
 @import "./components/button.css";
+@import "./components/alert.css";
 
 :root {
   font-size: 100%;
