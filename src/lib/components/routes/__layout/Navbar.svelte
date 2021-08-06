@@ -5,7 +5,7 @@
     enableBodyScroll,
     toggleBodyScroll,
   } from "$lib/utilities/bodyScroll";
-  import { fly, fade } from "svelte/transition";
+  import { fly } from "svelte/transition";
 
   let currentRoute: string;
   $: {
