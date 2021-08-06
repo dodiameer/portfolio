@@ -7,6 +7,8 @@
 @import "./utilities/flow.css";
 @import "./utilities/elevation.css";
 @import "./utilities/hyphenate.css";
+/** Components */
+@import "./components/container.css";
 
 :root {
   font-size: 100%;
