@@ -10,14 +10,14 @@
       class="col-md-12 col-lg-6"
       image="/images/work/portfolio.png"
       imageAlt="Portfolio website screenshot">
-      Completely build from scratch, it uses SvelteKit, a framework made by the
+      Completely built from scratch, it uses SvelteKit, a framework made by the
       Svelte team that builds on top of Svelte to provide features like
       server-side rendering (SSR), Static generation (SSG), and client-side
       routing, all of which help boost your site's Search Engine Optimization
       (SEO) rating, making your site appear at the top of search results, and
       improve the user experience when using your site.
       <svelte:fragment slot="actions">
-        <a href="#work-section" class="btn">Learn more</a>
+        <a href="/contact" class="btn">Learn more</a>
       </svelte:fragment>
     </Card>
     <Card
