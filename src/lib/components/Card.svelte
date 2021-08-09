@@ -12,7 +12,7 @@
 <template>
   <article class="card elevation-1 hover:elevation-2 {classNames}" class:card--hover-effect="{hoverEffect}">
     {#if image}
-      <img src="{image}" alt="{imageAlt}" class="card__image" />
+      <img src="{image}" alt="{imageAlt}" loading="lazy" class="card__image" />
     {:else}
       <div class="card__icon">
         <slot name="icon">{icon}</slot>
