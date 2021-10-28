@@ -88,7 +88,7 @@
     <input
       type="hidden"
       name="_next"
-      value="https://portfolio.dodiameer.tk/contact?sent=true" />
+      value="https://dodiameer.ml/contact?sent=true" />
     <div class="container row submit">
       <button class="btn col-md-12 col-lg-2" type="submit"> Send! </button>
       <button class="btn btn-secondary col-md-12 col-lg-2" type="reset">
